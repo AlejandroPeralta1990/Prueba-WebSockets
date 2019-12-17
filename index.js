@@ -31,7 +31,6 @@ io.on('connection', (socket) => {
     socket.on('chat:typing', (data) => {
         //se emite un evento a todos los clientes conectados ecepto al emisor de la acción
         socket.broadcast.emit('chat:typing', data);
-        ///prueba 
     });
 });
 
